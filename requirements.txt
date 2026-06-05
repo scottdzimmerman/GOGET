@@ -1,0 +1,28 @@
+# Python dependencies for the GOGET scripts (migrated from Colab).
+# Pinning is intentionally loose; pin versions if you need reproducibility.
+
+pandas
+numpy
+geopandas
+shapely
+rtree
+cartopy
+pygsheets
+SQLAlchemy
+psycopg2-binary
+xlsxwriter
+openpyxl
+requests
+pytesseract
+Pillow
+utm
+fuzzywuzzy[speedup]
+python-Levenshtein
+
+# Notes:
+# - Some notebooks used Google Colab's built-in auth / google.colab.drive.
+#   Those lines were commented out during migration. To read/write Google
+#   Sheets outside Colab, configure pygsheets with a service-account JSON.
+# - `pytesseract` also requires the Tesseract OCR binary installed on the system.
+# - A couple notebooks referenced `pip install config`; that import is ambiguous
+#   and was left flagged in-file rather than added here.
