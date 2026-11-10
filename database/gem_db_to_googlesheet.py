@@ -43,7 +43,7 @@ print('this runs qc output will all be timestamped: ' + timestamp)
 # ===== Cell 3 =====
 # Set up database pull via URL from the data team.
 # (URL updated 2025-07-07 by Maisie to reflect new follower database location)
-DATABASE_URL = 'postgres://readonly:p8973ecd68569dabd2e8d1bc7bd5446d35a0d457487e0a783c83de2ec8a1043cc@ec2-54-243-187-12.compute-1.amazonaws.com:5432/d3o895iig4poii'
+DATABASE_URL = 'Database_URL'
 
 if DATABASE_URL.startswith('postgres:'):
     DATABASE_URL = DATABASE_URL.replace('postgres:', 'postgresql:')
